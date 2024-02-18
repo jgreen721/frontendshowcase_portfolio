@@ -1,0 +1,32 @@
+.about-me-div {
+  margin: 2.5rem;
+}
+
+.about-me-h5::first-letter {
+  initial-letter: 4 3;
+  margin: 0 1rem;
+  /* --webkit-initial-letter: 10 2;
+  -webkit-initial-letter: 10 2; */
+}
+
+.small-indent {
+  text-indent: 10px;
+}
+
+.indent {
+  text-indent: 50px;
+}
+
+@media screen and (max-width: 550px) {
+  .about-me-div {
+    margin: 2rem 0rem;
+  }
+
+  .small-indent {
+    text-indent: 5px;
+  }
+
+  .indent {
+    text-indent: 25px;
+  }
+}
