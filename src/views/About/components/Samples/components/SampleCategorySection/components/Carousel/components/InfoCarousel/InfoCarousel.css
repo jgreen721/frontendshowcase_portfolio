@@ -1,0 +1,134 @@
+.info-carousel-parent {
+  /* height: 250px; */
+  /* position: absolute; */
+  /* transform: translateX(-75%); */
+  /* bottom: 0; */
+  /* border: 3px solid blue; */
+  width: 100%;
+}
+
+.info-carousel {
+  position: relative;
+  transform: translateX(-75%);
+  height: 100%;
+}
+
+.carousel-info-item {
+  height: 100%;
+  width: 50%;
+  /* min-width: 325px; */
+  position: absolute;
+  inset: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 1rem;
+  /* border: 3px solid red; */
+  /* box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5),
+      5px 5px 15px rgba(255, 255, 255, 0.5); */
+}
+
+.peripheral-info-item {
+  display: none;
+}
+
+.scaled-info-item {
+  width: 75%;
+  transform: translateX(-15%);
+  animation: spawninfo 0.5s forwards;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+@keyframes spawninfo {
+  0% {
+    transform: scale(0.5);
+    filter: blur(50px);
+  }
+  50% {
+    transform: scale(1.2) translateX(-15%);
+  }
+
+  100% {
+    transform: scale(1) translateX(-15%);
+    filter: blur(0px);
+  }
+}
+
+.sample-techs {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  font-size: 3.4rem;
+}
+
+.html-orange {
+  color: rgb(255, 102, 0);
+}
+
+.css-blue {
+  color: rgb(0, 89, 255);
+}
+
+.js-yellow {
+  color: rgb(217, 255, 0);
+}
+
+.blender-orange {
+  color: rgb(255, 145, 0);
+}
+
+.react-blue {
+  color: rgb(0, 140, 255);
+}
+
+.three-green {
+  color: green;
+}
+
+.sample-btns-row {
+  display: flex;
+  align-items: center;
+}
+
+.code-btn {
+  border-radius: 100px;
+  padding: 0.5rem 3.5rem;
+  background: transparent;
+  color: var(--secondaryColor);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  position: relative;
+  border: 2px solid var(--secondaryColor);
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+
+.code-btn:hover {
+  box-shadow: 3px 1px 2px var(--secondaryColor),
+    4px 4px 12px var(--secondaryColor), 5px 4px 20px var(--secondaryColor);
+  transform: scale(0.9, 1.1);
+  transition: 0.3s ease;
+}
+
+.code-btn:hover::after {
+  content: "";
+  background: var(--secondaryColor);
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  bottom: -3rem;
+  right: -1rem;
+  filter: blur(25px);
+  transition: 0.1s;
+}
+/* 
+.code-btn:hover::after {
+  filter: blur(20px);
+} */

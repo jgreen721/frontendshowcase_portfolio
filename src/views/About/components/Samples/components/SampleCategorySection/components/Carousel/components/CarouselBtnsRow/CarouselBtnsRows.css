@@ -1,0 +1,80 @@
+.carousel-btns-row {
+  /* border: 3px dotted white; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.carousel-btn {
+  /* position: absolute; */
+  /* width: 0px; */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  /* border: 2px solid orange; */
+  /* bottom: -5rem; */
+  color: var(--mainColor);
+  font-size: 4rem;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+/* .carousel-btn:hover {
+    transform: scale(1.4);
+  } */
+
+.carousel-btn-arrow {
+  transition: 0.55s ease;
+}
+
+.next,
+.prev {
+  position: relative;
+}
+
+.next::after,
+.prev::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  opacity: 85%;
+  background: var(--secondaryColor);
+  transition: 0.5s;
+  width: 70%;
+  height: 35%;
+  top: 25%;
+  left: 35%;
+  filter: blur(12px);
+  transition: 0.3s ease;
+  /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); */
+}
+
+.prev::after {
+  left: 0%;
+}
+
+.next:hover::after {
+  width: 95%;
+  height: 35%;
+  top: 30%;
+  left: 10%;
+  filter: blur(18px);
+}
+
+.next:hover .carousel-btn-arrow {
+  transform: translateX(-0.75rem);
+}
+
+.prev:hover::after {
+  width: 95%;
+  height: 35%;
+  top: 30%;
+  left: 10%;
+  filter: blur(18px);
+}
+
+.prev:hover .carousel-btn-arrow {
+  transform: translateX(0.75rem);
+}

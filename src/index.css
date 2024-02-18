@@ -60,6 +60,10 @@ p {
   z-index: 50;
 }
 
+.no-hover {
+  pointer-events: none;
+}
+
 @media screen and (max-width: 1150px) {
   :root {
     --mainPaddingX: 6.5rem;

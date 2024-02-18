@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <header className="header">
         <div className="header-content">
+          <div>
           <div className="header-title-div">
             <h1>Justin</h1>
             <h1>Green</h1>
@@ -38,6 +39,7 @@ const Header = () => {
           <div className="mobile-div mobile mobile-curr-section">
           <h5>CurrSection:</h5>
             <h3 className="curr-section-h3">Junior</h3>
+          </div>
           </div>
           </div>
           <ul className="media-links">

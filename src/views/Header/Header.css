@@ -7,7 +7,9 @@
   height: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
+  /* border: 3px solid red; */
+  height: 100vh;
   flex-direction: column;
   padding: 10rem 5rem;
   padding-bottom: 0rem;
