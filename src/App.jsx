@@ -3,11 +3,10 @@ import './App.css'
 import { useAppContext } from "./context/AppContext";
 
 function App() {
-  const stuff = useAppContext();
-  console.log(stuff)
+  const {theme} = useAppContext();
 
   return (
-    <div data-theme={stuff.theme} className="app">
+    <div data-theme={theme} className="app">
       <div className="app-content">
         <div className="app-column flex-1">
           <Header/>

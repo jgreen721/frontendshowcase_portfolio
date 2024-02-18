@@ -3,7 +3,7 @@ import { CarouselItem,InfoCarousel, CarouselBtnsRow } from './components';
 import "./Carousel.css"
 
 const Carousel = ({samples}) => {
-  console.log(samples)
+  // console.log(samples)
     const [data,setData] = useState(samples)
     const [curr,setCurr] = useState(samples.filter(s=>s.translateId == 2)[0])
 

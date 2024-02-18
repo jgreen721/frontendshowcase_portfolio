@@ -39,7 +39,6 @@ export const mapSampleIcons = (data)=>{
 
       data = data.map(category=>({...category,samples:category.samples.map(s=>({...s,technology:s.technology.map((t,idx)=>({id:idx+1,tech:t,iconSpecs:t == "HTML" ? {icon:<FaHtml5/>,color:'html-orange'} : t == "JS" ? {icon:<FaJs/>,color:"js-yellow"} : t == "CSS" ? {icon:<FaCss3/>,color:"css-blue"} : t == "Blender" ? {icon:<BiLogoBlender/>,color:"blender-orange"} : t == "React" ? {icon:<FaReact/>,color:"react-blue"} : {icon:<TbBrandThreejs/>,color:"three-green"}}))}))}))
 
-        console.log("data",data);
         return data;
     // })
 }

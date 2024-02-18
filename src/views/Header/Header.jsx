@@ -1,7 +1,12 @@
 import React from 'react'
+import { useAppContext } from '../../context/AppContext'
 import "./Header.css"
 
 const Header = () => {
+  const {currView} = useAppContext();
+
+
+  console.log("currView",currView)
   return (
     <header className="header">
         <div className="header-content">
@@ -21,18 +26,18 @@ const Header = () => {
           <div className="sections-list-mobile-desktop-div">
           <ul className="section-items desktop desktop-list">
             <li className="section-item">
-              <a className="section-link-item header-link-item" href="">
+              <a className={currView == "newbie" ? "section-link-item header-link-item in-view" : "section-link-item header-link-item"} href="">
                 <h3>Newbie</h3>
               </a>
             </li>
             <li className="section-item">
-              <a className="section-link-item header-link-item" href=""><h3>Beginner</h3></a>
+              <a className={currView == "beginner" ? "section-link-item header-link-item in-view" : "section-link-item header-link-item"} href=""><h3>Beginner</h3></a>
             </li>
             <li className="section-item">
-              <a className="section-link-item header-link-item" href=""><h3>Junior</h3></a>
+              <a className={currView == "junior" ? "section-link-item header-link-item in-view" : "section-link-item header-link-item"} href=""><h3>Junior</h3></a>
             </li>
             <li className="section-item">
-              <a className="section-link-item header-link-item" href=""><h3>Senior</h3></a>
+              <a className={currView == "senior" ? "section-link-item header-link-item in-view" : "section-link-item header-link-item"} href=""><h3>Senior</h3></a>
             </li>
 
           </ul>

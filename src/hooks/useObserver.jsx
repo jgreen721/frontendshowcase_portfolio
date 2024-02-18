@@ -5,9 +5,13 @@ export const useObserver = (el)=>{
     const [inView,setInView] = useState(false);
 
     const signalSection = (entries)=>{
-        console.log("Entries",entries);
+        // console.log("Entries",entries);
         if(entries[0].isIntersecting){
-            console.log("showing section!")
+            // console.log("showing section!")
+            setInView(true)
+        }
+        else{
+            setInView(false);
         }
     }
 
@@ -18,6 +22,8 @@ export const useObserver = (el)=>{
         if(el.current){
             observer.observe(el.current)
         }
+
+
     },[]);
 
 

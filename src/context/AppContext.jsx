@@ -13,6 +13,7 @@ export const useAppContext = (()=>{
 export const AppProvider = ({children})=>{
     const [theme,setTheme] = useState("dark");
     const [data,setData] = useState([]);
+    const [currView,setCurrView] = useState(null);
     
 
 
@@ -20,11 +21,17 @@ export const AppProvider = ({children})=>{
                setData(mapSampleIcons(fileData))
             },[])
 
+            const handleChangeView=(view)=>{
+                setCurrView(view.toLowerCase());
+            }
+
 
 
     const values={
         theme,
         data,
+        currView,
+        handleChangeView
       
     }
 

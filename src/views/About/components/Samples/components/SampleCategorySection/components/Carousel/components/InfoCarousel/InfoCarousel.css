@@ -5,6 +5,7 @@
   /* bottom: 0; */
   /* border: 3px solid blue; */
   width: 100%;
+  /* border: 3px solid red; */
 }
 
 .info-carousel {
@@ -27,7 +28,6 @@
   justify-content: flex-end;
   text-align: center;
   padding: 1rem;
-  /* border: 3px solid red; */
   /* box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5),
       5px 5px 15px rgba(255, 255, 255, 0.5); */
 }
@@ -94,6 +94,7 @@
 .sample-btns-row {
   display: flex;
   align-items: center;
+  padding: 3rem 0; /*allow for button glow without hitting edge */
 }
 
 .code-btn {
@@ -108,25 +109,45 @@
   border: 2px solid var(--secondaryColor);
   transition: 0.7s ease;
   cursor: pointer;
+  opacity: 65%;
+  box-shadow: 0px 0px 2px transparent, 0px 0px 5px transparent;
 }
 
 .code-btn:hover {
-  box-shadow: 3px 1px 2px var(--secondaryColor),
-    4px 4px 12px var(--secondaryColor), 5px 4px 20px var(--secondaryColor);
+  /* box-shadow: 0px 0px 2px var(--secondaryColor),
+    4px 4px 16px var(--secondaryColor), 5px 4px 18px var(--secondaryColor); */
   transform: scale(0.9, 1.1);
   transition: 0.3s ease;
+  opacity: 1;
+  box-shadow: 0px 0px 2px var(--secondaryColor),
+    0px 0px 5px var(--secondaryColor);
 }
 
 .code-btn:hover::after {
   content: "";
   background: var(--secondaryColor);
-  width: 100px;
-  height: 10px;
+  width: 150px;
+  height: 2.5px;
   position: absolute;
-  bottom: -3rem;
-  right: -1rem;
-  filter: blur(25px);
-  transition: 0.1s;
+  bottom: -2.75rem;
+  right: -7.5rem;
+  filter: blur(20px);
+  animation: scaleshadow 0.2s forwards;
+  transition: 0.2s;
+}
+
+@keyframes scaleshadow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 /* 
 .code-btn:hover::after {
