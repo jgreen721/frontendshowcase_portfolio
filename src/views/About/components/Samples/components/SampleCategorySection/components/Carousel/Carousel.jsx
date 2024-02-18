@@ -68,6 +68,7 @@ const Carousel = ({samples}) => {
           <h5>{sample.description}</h5>
           {/* </div> */}
           <ul className="sample-techs">
+            <h5>Built with:</h5>
             {sample.technology.map(t=>(
               <li className={t.iconSpecs.color} key={t.id}>{t.iconSpecs.icon}</li>
             ))}
