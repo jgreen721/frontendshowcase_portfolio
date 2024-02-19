@@ -93,7 +93,7 @@
   }
 
   .header-content {
-    padding: 2rem;
+    padding: 4rem 2rem;
     padding-bottom: 0rem;
     height: auto;
   }
@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 550px) {
   .header-content {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 
   .header-description {

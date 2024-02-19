@@ -28,7 +28,7 @@ const Scene = ()=>{
     },[]);
 
     const setConf = ()=>{
-        if(innerWidth > 1150){
+        if(innerWidth > 1100){
             setScale(.35)
             setRotateIntensity(1)
             setFloatIntensity(1)
@@ -36,16 +36,16 @@ const Scene = ()=>{
             setPos([1.15,-2.5,0])
 
          }
-        if(innerWidth < 1125){
-            setPos([3.25,-2,0])
-            setScale(.6)
+        if(innerWidth < 1100){
+            setPos([3,-2,0])
+            setScale(.7)
             setRotateIntensity(.35)
             setFloatIntensity(.4)
             setFloatingRange([.6,.6])
         }
 
-        if(innerWidth < 850){
-            setPos([.5,-2.75,0])
+        if(innerWidth < 750){
+            setPos([1.5,-2,0])
             setScale(.385)
             setRotateIntensity(.5)
         }
