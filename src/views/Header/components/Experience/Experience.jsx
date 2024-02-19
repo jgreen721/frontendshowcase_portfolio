@@ -45,7 +45,7 @@ const Scene = ()=>{
         }
 
         if(innerWidth < 850){
-            setPos([3,-2.75,0])
+            setPos([.5,-2.75,0])
             setScale(.385)
             setRotateIntensity(.5)
         }

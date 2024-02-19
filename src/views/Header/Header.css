@@ -119,6 +119,10 @@
     padding: 2rem 0;
   }
 
+  .header-description {
+    display: none;
+  }
+
   .header-card {
     width: 300px;
   }
