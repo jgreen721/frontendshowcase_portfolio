@@ -12,18 +12,23 @@ const InfoCarousel = ({data}) => {
       <h5>{sample.description}</h5>
       {/* </div> */}
       <ul className="sample-techs">
-        <h5>Built with:</h5>
+        <h5 className="mid-thin">Built with:</h5>
         {sample.technology.map(t=>(
           <li className={t.iconSpecs.color} key={t.id}>{t.iconSpecs.icon}</li>
         ))}
       </ul>
 <div className="sample-btns-row">
-  <button className="code-btn">Code</button>
+  <div className="open-tag-div tag-div"></div>
+  <a href={sample.site} target="_blank" className="code-btn">Code</a>
+  <div className="close-tag-div tag-div">
+    <div className="close-line"></div>
+  </div>
 </div>
     </li>
   ))}
   </ul>
   </div>
+  
   )
 }
 

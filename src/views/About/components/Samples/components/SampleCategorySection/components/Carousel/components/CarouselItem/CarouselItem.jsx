@@ -8,7 +8,7 @@ const CarouselItem = ({sample,samples}) => {
       <img className="sample-img" src={sample.img} alt="sample-img" />
    <div>
      <div className={sample.translateId == 2 ? "visit-link-div" : "visit-link-div no-hover"}>
-     <a className="visit-link" href="">Visit Site</a>
+     <a className="visit-link desktop-link" href={sample.site} target="_blank">Visit Site</a>
      </div>
    </div>
     </div>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ html {
   --white: white;
   --mintgreen: rgb(17, 228, 157);
   --weirdFont: "Anta", sans-serif;
+  --otherFont: "Raleway", sans-serif;
 }
 
 li {
@@ -47,6 +50,14 @@ h5 {
 
 p {
   font-size: 1.3rem;
+}
+
+.mid-thin {
+  font-weight: 300;
+}
+
+.strong {
+  font-weight: 800;
 }
 
 .my-1 {

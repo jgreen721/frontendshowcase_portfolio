@@ -19,7 +19,7 @@
   left: 10%;
   background: var(--mainColor);
   filter: blur(10px);
-  opacity: 12.5%;
+  opacity: 75%;
   bottom: -2rem;
   content: "";
   position: absolute;
@@ -31,7 +31,7 @@
   left: 10%;
   background: var(--secondaryColor);
   content: "";
-  opacity: 25%;
+  opacity: 85%;
   position: absolute;
   bottom: -2.5rem;
   filter: blur(20px);

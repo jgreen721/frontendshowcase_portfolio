@@ -97,6 +97,77 @@
   padding: 3rem 0; /*allow for button glow without hitting edge */
 }
 
+.open-tag-div:hover {
+  transform: scale(2) translateX(1rem);
+}
+
+.open-tag-div {
+  position: relative;
+  transform: translateX(1rem);
+}
+
+.open-tag-div::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: var(--secondaryColor);
+  position: absolute;
+  left: 1rem;
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.open-tag-div::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 1rem;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  background: var(--secondaryColor);
+}
+
+.close-tag-div {
+  position: relative;
+  transform: translateX(-1rem);
+}
+
+.close-tag-div::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: -1rem;
+  transform-origin: left;
+  transform: rotate(-135deg);
+  background: var(--secondaryColor);
+}
+
+.close-tag-div::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: -1rem;
+  transform-origin: left;
+  transform: rotate(135deg);
+  background: var(--secondaryColor);
+}
+
+.close-line {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: var(--secondaryColor);
+  left: -2.25rem;
+  top: -1rem;
+  transform: rotate(12deg);
+}
+
 .code-btn {
   border-radius: 100px;
   padding: 0.5rem 3.5rem;
