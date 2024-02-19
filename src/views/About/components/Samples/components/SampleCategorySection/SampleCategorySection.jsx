@@ -20,7 +20,7 @@ const SampleCategorySection = ({data}) => {
     },[inView])
     
   return (
-    <div ref={elRef} className="sample-category-section">
+    <div id={data.level.toLowerCase()} ref={elRef} className="sample-category-section">
       <div className="sample-category-title-div">
         <h3 className="my-1">{data.level}</h3>
         <h5 className="my-1">{data.description}</h5>

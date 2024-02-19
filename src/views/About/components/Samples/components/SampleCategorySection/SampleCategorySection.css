@@ -4,6 +4,10 @@
   padding: 2.5rem 0;
 }
 
+.sample-category-section:last-child {
+  margin-bottom: 0rem;
+}
+
 .sample-category-title-div {
   margin: 3rem;
   margin-right: 12.5rem;

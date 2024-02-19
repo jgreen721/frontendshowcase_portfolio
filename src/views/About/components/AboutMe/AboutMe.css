@@ -17,6 +17,10 @@
   text-indent: 50px;
 }
 
+.about-me-link {
+  color: var(--secondaryColor);
+}
+
 @media screen and (max-width: 550px) {
   .about-me-div {
     margin: 2rem 0rem;
