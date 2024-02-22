@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 650px) {
   .sample-category-title-div {
-    margin: auto;
-    margin-right: auto;
+    margin: 2rem;
+    /* margin-right: auto; */
   }
 }

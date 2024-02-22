@@ -23,7 +23,8 @@
 
 @media screen and (max-width: 550px) {
   .about-me-div {
-    margin: 2rem 0rem;
+    margin: 0rem;
+    padding: 2rem;
   }
 
   .small-indent {

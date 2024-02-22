@@ -21,11 +21,12 @@
   max-width: 144rem;
   margin: 0 auto;
   /* background: white; */
-  /* border: 3px solid black; */
+  /* border: 3px solid yellow; */
   height: 100vh;
   display: flex;
+  gap: 2.5rem;
   overflow: hidden;
-  padding: 0rem var(--mainPaddingX);
+  padding: 0rem;
   font-family: var(--weirdFont);
   font-family: var(--otherFont);
   text-shadow: 1px 1px 10px var(--mainBg);

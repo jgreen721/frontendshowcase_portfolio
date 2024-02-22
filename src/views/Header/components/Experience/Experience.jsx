@@ -7,7 +7,7 @@ import "./Experience.css"
 const Scene = ()=>{
     const img = useGLTF("./models/newtypingscene.glb")
     const {mixer,actions} = useAnimations(img.animations, img.scene);
-    const [pos,setPos] = useState([1.15,-2.5,0])
+    const [pos,setPos] = useState([.15,-2.5,0])
     const [scale,setScale] = useState(.25)
     const [rotateIntensity,setRotateIntensity] = useState(1)
     const [floatIntensity,setFloatIntensity] = useState(1)
@@ -33,7 +33,7 @@ const Scene = ()=>{
             setRotateIntensity(1)
             setFloatIntensity(1)
             setFloatingRange([1,1])
-            setPos([1.15,-2.5,0])
+            setPos([.15,-2.85,0])
 
          }
         if(innerWidth < 1100){
@@ -44,9 +44,9 @@ const Scene = ()=>{
             setFloatingRange([.6,.6])
         }
 
-        if(innerWidth < 750){
+        if(innerWidth < 550){
             setPos([1.5,-2,0])
-            setScale(.385)
+            setScale(.585)
             setRotateIntensity(.5)
         }
        

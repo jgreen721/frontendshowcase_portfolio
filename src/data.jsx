@@ -1,4 +1,4 @@
-import { faqCard,nftCard,perfumeAd,resultsCard,makerPrelaunch, dictionary,multistepForm,notifications,pwordGenerator,rpsSite,bodyMass,clockSite,portfolio,quiz,taskManager,movieSite,speakerSite, rateUsCard, ccInput } from './const'
+import { faqCard,nftCard,perfumeAd,resultsCard,makerPrelaunch,notificationsRedo, dictionary,multistepForm,notifications,pwordGenerator,rpsSite,bodyMass,clockSite,portfolio,quiz,taskManager,movieSite,speakerSite, rateUsCard, ccInput } from './const'
 
 
 
@@ -26,6 +26,7 @@ export const data = [
         {id:3,translateId:2,title:"Notifications Snippet",description:"Elevate your user experience with our sleek notification snippet crafted in JavaScript. This minimalist yet powerful feature keeps users informed in real-time, ensuring a seamless and engaging interaction with your application.",technology:["HTML","CSS","JS"],img:notifications,site:"https://jgreen721.github.io/frontend_challenges/notificationsapp/",translate:105},
         {id:4,translateId:3,title:"Password Generator",description:"Embark on a secure digital journey with our stylish JavaScript password generator. This user-friendly app effortlessly creates strong passwords, bridging the gap between accessibility and heightened online security in today's cyber landscape.",technology:["HTML","CSS","JS"],img:pwordGenerator,site:"https://jgreen721.github.io/frontend_challenges/passwd_gen/",translate:210},
         {id:5,translateId:4,title:"CC Input",description:"Elevate your payment process with this styled CC-input forms complete with input validation.",technology:["HTML","CSS","JS"],img:ccInput,site:"https://jgreen721.github.io/frontend_challenges/carddetails/index.html",translate:210},
+        {id:6,translateId:5,title:"Styled Notification",description:"Sharpening design skills with a redone snippet of notifications modal.",technology:["HTML","CSS","JS"],img:notificationsRedo,site:"https://jgreen721.github.io/frontend_challenges/notificationAppRedo",translate:315},
       ]
     },
     {
