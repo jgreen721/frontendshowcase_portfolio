@@ -12,6 +12,7 @@ const Samples = () => {
          {data.map(d=>(
             <SampleCategorySection key={d.id} data={d}/>
         ))} 
+        
     </div>
   )
 }

@@ -88,84 +88,17 @@
 }
 
 .three-green {
-  color: green;
+  color: rgb(24, 192, 24);
+}
+
+.vue-green {
+  color: rgb(15, 247, 131);
 }
 
 .sample-btns-row {
   display: flex;
   align-items: center;
   padding: 3rem 0; /*allow for button glow without hitting edge */
-}
-
-.open-tag-div:hover {
-  transform: scale(2) translateX(1rem);
-}
-
-.open-tag-div {
-  position: relative;
-  transform: translateX(1rem);
-}
-
-.open-tag-div::after {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background: var(--secondaryColor);
-  position: absolute;
-  left: 1rem;
-  transform-origin: left;
-  transform: rotate(45deg);
-}
-
-.open-tag-div::before {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background: red;
-  position: absolute;
-  left: 1rem;
-  transform-origin: left;
-  transform: rotate(-45deg);
-  background: var(--secondaryColor);
-}
-
-.close-tag-div {
-  position: relative;
-  transform: translateX(-1rem);
-}
-
-.close-tag-div::after {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background: red;
-  position: absolute;
-  left: -1rem;
-  transform-origin: left;
-  transform: rotate(-135deg);
-  background: var(--secondaryColor);
-}
-
-.close-tag-div::before {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background: red;
-  position: absolute;
-  left: -1rem;
-  transform-origin: left;
-  transform: rotate(135deg);
-  background: var(--secondaryColor);
-}
-
-.close-line {
-  position: absolute;
-  width: 2px;
-  height: 20px;
-  background: var(--secondaryColor);
-  left: -2.25rem;
-  top: -1rem;
-  transform: rotate(12deg);
 }
 
 .code-btn {
@@ -185,8 +118,6 @@
 }
 
 .code-btn:hover {
-  /* box-shadow: 0px 0px 2px var(--secondaryColor),
-    4px 4px 16px var(--secondaryColor), 5px 4px 18px var(--secondaryColor); */
   transform: scale(0.9, 1.1);
   transition: 0.3s ease;
   opacity: 1;
@@ -220,7 +151,3 @@
     opacity: 1;
   }
 }
-/* 
-.code-btn:hover::after {
-  filter: blur(20px);
-} */

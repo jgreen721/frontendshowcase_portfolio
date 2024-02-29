@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutMe,Samples } from './components'
+import { AboutMe,Samples,Footer } from './components'
 import "./About.css"
 
 const About = () => {
@@ -8,8 +8,8 @@ const About = () => {
           <AboutMe/>
       <div className="sections-container">
         <Samples/>
-        {/* <Carousel/> */}
       </div>
+      <Footer/>
     </div>
   )
 }

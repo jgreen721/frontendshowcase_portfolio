@@ -37,7 +37,6 @@
 }
 
 .overflow-column {
-  /* border: 3px solid green; */
   overflow-y: auto;
   scroll-behavior: smooth;
 }

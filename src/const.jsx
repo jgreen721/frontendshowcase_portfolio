@@ -22,6 +22,7 @@ export const clockSite = "./samples/junior/clock.png"
 export const portfolio = "./samples/junior/portfoliosample.png"
 export const quiz = "./samples/junior/quiz.png"
 export const dictionary = "./samples/junior/dictionary.png"
+export const spaceApp = "./samples/junior/space_app.png"
 
 
 //expert
