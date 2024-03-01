@@ -1,0 +1,10 @@
+.mouse-hover {
+  width: 500px;
+  height: 500px;
+  background: var(--blue);
+  border-radius: 50%;
+  opacity: 25%;
+  filter: blur(125px);
+  position: absolute;
+  z-index: 100;
+}

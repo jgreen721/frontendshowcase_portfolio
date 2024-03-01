@@ -2,6 +2,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  /* border: 3px solid red; */
   inset: 0;
+  min-height: 700px; /*prevent model from shrinking too much */
+  min-width: 500px;
+}
+
+@media screen and (max-width: 1100px) {
+  .experience-overlay {
+    min-height: auto;
+    min-width: auto;
+  }
 }

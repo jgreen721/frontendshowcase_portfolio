@@ -6,6 +6,8 @@ import "./Samples.css"
 const Samples = () => {
     const {data} = useAppContext();
     // console.log(data);
+
+    
   return (
     <div className="samples-parent-container">
       

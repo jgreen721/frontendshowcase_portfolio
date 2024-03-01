@@ -4,10 +4,7 @@ import {MediaLinks, SectionItems,Experience} from "./components"
 import "./Header.css"
 
 const Header = () => {
-  const {currView} = useAppContext();
 
-
-  console.log("currView",currView)
   return (
     <header className="header">
         <div className="header-content">

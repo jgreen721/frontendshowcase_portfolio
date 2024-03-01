@@ -19,7 +19,7 @@ const Scene = ()=>{
         setConf();
 
         img.animations.forEach(animation=>{
-            console.log("animation",animation)
+            // console.log("animation",animation)
             if(animation.name == "Typing"){
             const action = mixer.clipAction(animation);
             action.play();
@@ -52,9 +52,10 @@ const Scene = ()=>{
        
     }
 
-    onresize=()=>{
-        setConf();
-    }
+    // onresize=()=>{
+    //     console.log('resizing experience!!')
+    //     setConf();
+    // }
 
     return (
         <Float speed={2}
