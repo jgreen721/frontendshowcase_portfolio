@@ -52,10 +52,10 @@ const Scene = ()=>{
        
     }
 
-    // onresize=()=>{
-    //     console.log('resizing experience!!')
-    //     setConf();
-    // }
+    onresize=()=>{
+        console.log('resizing experience!!')
+        setConf();
+    }
 
     return (
         <Float speed={2}

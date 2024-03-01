@@ -7,7 +7,12 @@
   --mainBg: black;
   --mainColor: white;
   --secondaryColor: var(--mintgreen);
-  --mainGradient: linear-gradient(35deg, grey, black);
+  --mainGradient: linear-gradient(
+    -35deg,
+    var(--blue),
+    var(--black),
+    var(--black)
+  );
 }
 
 .app {
